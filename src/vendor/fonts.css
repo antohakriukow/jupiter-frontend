@@ -1,0 +1,20 @@
+@font-face {
+	src: url('./fonts/Epilogue-Regular.ttf') format('ttf');
+	font-family: 'Epilogue';
+	font-style: normal;
+	font-weight: 400;
+}
+
+@font-face {
+	src: url('./fonts/Epilogue-Bold.ttf') format('ttf');
+	font-family: 'Epilogue';
+	font-style: normal;
+	font-weight: 700;
+}
+
+@font-face {
+	src: url('./fonts/Epilogue-Black.ttf') format('ttf');
+	font-family: 'Epilogue';
+	font-style: normal;
+	font-weight: 900;
+}

@@ -17,3 +17,9 @@
 		width: 440px;
 	}
 }
+
+@media (max-width: 1040px) {
+	.navigation {
+		display: none;
+	}
+}

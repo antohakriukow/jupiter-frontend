@@ -9,4 +9,16 @@
 	font-weight: 400;
 	font-size: 14px;
 	line-height: 1;
+
+	&:hover {
+		cursor: pointer;
+		color: #16cd53;
+		outline: 1px #16cd53 solid;
+	}
+}
+
+@media (max-width: 1040px) {
+	.btn {
+		display: none;
+	}
 }

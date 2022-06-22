@@ -3,11 +3,7 @@ import { navItems } from '../../../data/navItems'
 import styles from './Navigation.module.scss'
 import NavItem from '../NavItem/NavItem'
 
-interface INavigation {
-	titles?: string[]
-}
-
-const Navigation: FC<INavigation> = () => {
+const Navigation: FC = () => {
 	return (
 		<ul className={styles.navigation}>
 			{navItems.map((title) => (

@@ -1,7 +1,9 @@
 import { FC } from 'react'
+
 import ContactBtn from '../../ui/ContactBtn/ContactBtn'
 import Logo from '../../ui/Logo/Logo'
 import Navigation from '../../ui/Navigation/Navigation'
+
 import styles from './Header.module.scss'
 
 const Header: FC = () => {

@@ -1,13 +1,14 @@
 import { FC } from 'react'
-import styles from './NavItem.module.scss'
+
+import styles from './Navigation.module.scss'
 
 interface INavItem {
 	title: string
 }
 const NavItem: FC<INavItem> = ({ title }) => {
 	return (
-		<li className={styles.nav__li}>
-			<a href="/" className={styles.nav__item}>
+		<li className={styles.navigation__li}>
+			<a href="/" className={styles.navigation__item}>
 				{title}
 			</a>
 		</li>

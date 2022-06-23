@@ -1,5 +1,6 @@
-import cn from 'classnames'
 import { FC } from 'react'
+import cn from 'classnames'
+
 import styles from './DropDownSelector.module.scss'
 
 interface IDropdownItem {

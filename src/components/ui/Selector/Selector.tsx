@@ -1,6 +1,6 @@
 import { FC } from 'react'
 import { useActions } from '../../../hooks/useActions'
-import SelectorItem from '../SelectorItem/SelectorItem'
+import SelectorItem from '../Selector/SelectorItem'
 import styles from './Selector.module.scss'
 
 export interface ISelector {

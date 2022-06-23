@@ -1,10 +1,12 @@
 import { FC } from 'react'
+import cn from 'classnames'
+
 import { useSelector } from 'react-redux'
 import { useActions } from '../../../hooks/useActions'
 import { TypeRootState } from '../../../store/store'
 import { ISelector } from '../Selector/Selector'
 import DropdownItem from './DropDownItem'
-import cn from 'classnames'
+
 import styles from './DropDownSelector.module.scss'
 
 const DropDownSelector: FC<ISelector> = ({ categories }) => {

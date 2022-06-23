@@ -1,10 +1,11 @@
 import { FC } from 'react'
+
 import { useWidth } from '../../../hooks/useWidth'
+import { useInitialData } from './useInitialData'
 import CardArea from '../../ui/CardArea/CardArea'
 import IncrementBtn from '../../ui/IncrementBtn/IncrementBtn'
 import DropDownSelector from '../../ui/DropDownSelector/DropDownSelector'
 import Selector from '../../ui/Selector/Selector'
-import { useInitialData } from './useInitialData'
 
 const Home: FC = () => {
 	const { width } = useWidth()

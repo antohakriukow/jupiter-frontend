@@ -1,9 +1,11 @@
+import cn from 'classnames'
 import { FC } from 'react'
+
 import { useCard } from '../../../hooks/useCard'
 import { ICard } from './card.interface'
-import styles from './Card.module.scss'
-import cn from 'classnames'
 import { useActions } from '../../../hooks/useActions'
+
+import styles from './Card.module.scss'
 
 const Card: FC<ICard> = ({ _id, name, category, url }) => {
 	const { activeCard, setActiveCard } = useCard()

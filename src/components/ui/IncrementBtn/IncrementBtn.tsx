@@ -1,7 +1,9 @@
 import { FC } from 'react'
 import { useSelector } from 'react-redux'
+
 import { useActions } from '../../../hooks/useActions'
 import { TypeRootState } from '../../../store/store'
+
 import styles from './IncrementBtn.module.scss'
 
 const IncrementBtn: FC = () => {

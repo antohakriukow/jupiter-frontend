@@ -1,8 +1,9 @@
 import { FC } from 'react'
-import styles from './SelectorItem.module.scss'
-import cn from 'classnames'
 import { useSelector } from 'react-redux'
+import cn from 'classnames'
 import { TypeRootState } from '../../../store/store'
+
+import styles from './Selector.module.scss'
 
 interface ISelectorItem {
 	category: string

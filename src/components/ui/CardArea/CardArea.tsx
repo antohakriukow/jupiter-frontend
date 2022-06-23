@@ -1,7 +1,9 @@
 import { FC } from 'react'
+
 import Card from '../Card/Card'
-import styles from './CardArea.module.scss'
 import { ICard } from '../Card/card.interface'
+
+import styles from './CardArea.module.scss'
 
 interface ICardArea {
 	cards: ICard[] | []

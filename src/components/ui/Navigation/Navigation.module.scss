@@ -6,6 +6,21 @@
 	width: 530px;
 }
 
+.navigation__li {
+	padding-top: 10px;
+}
+
+.navigation__item {
+	color: #fff;
+	font-weight: 400;
+	font-size: 16px;
+	text-decoration: none;
+
+	&:hover {
+		color: #16cd53;
+	}
+}
+
 @media (max-width: 1240px) {
 	.navigation {
 		width: 480px;

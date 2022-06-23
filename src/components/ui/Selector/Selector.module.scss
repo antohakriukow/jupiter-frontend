@@ -8,6 +8,23 @@
 	width: 530px;
 }
 
+.selector__item {
+	color: #391400;
+	font-weight: 400;
+	font-size: 16px;
+	line-height: 2;
+	cursor: pointer;
+	user-select: none;
+
+	&:hover {
+		color: #16cd53;
+	}
+
+	&.active {
+		color: #16cd53;
+	}
+}
+
 @media (max-width: 1240px) {
 	.navigation {
 		width: 480px;

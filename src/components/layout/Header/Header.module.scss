@@ -42,17 +42,14 @@
 	line-height: 2;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 1040px) {
 	.header__nav {
 		justify-content: space-around;
+		padding: 10px 23px 0;
 	}
 }
 
 @media (max-width: 600px) {
-	.header__nav {
-		padding: 10px 23px 0;
-	}
-
 	.header__text {
 		padding-top: 96px;
 	}

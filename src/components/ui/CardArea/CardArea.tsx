@@ -1,13 +1,13 @@
 import { FC } from 'react'
-import Card, { ICard } from '../Card/Card'
+import Card from '../Card/Card'
 import styles from './CardArea.module.scss'
+import { ICard } from '../Card/card.interface'
 
 interface ICardArea {
 	cards: ICard[] | []
 }
 
 const CardArea: FC<ICardArea> = ({ cards }) => {
-	console.log('cards: ', cards)
 	return (
 		<ul className={styles.cardArea}>
 			{cards.map((card) => (

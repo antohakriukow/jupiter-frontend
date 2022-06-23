@@ -1,14 +1,32 @@
 import { FC } from 'react'
-import { cards } from '../../../data/cards'
+import { useWidth } from '../../../hooks/useWidth'
 import CardArea from '../../ui/CardArea/CardArea'
+import IncrementBtn from '../../ui/IncrementBtn/IncrementBtn'
+import DropDownSelector from '../../ui/DropDownSelector/DropDownSelector'
 import Selector from '../../ui/Selector/Selector'
-import styles from './Home.module.scss'
+import { useInitialData } from './useInitialData'
 
 const Home: FC = () => {
+	const { width } = useWidth()
+
+	const { cards, categories, currentCategory, cardsCount } = useInitialData()
+
+	const renderCards =
+		currentCategory === 'Show All'
+			? cards.slice(0, cardsCount)
+			: cards
+					.filter((card) => card.category === currentCategory)
+					.slice(0, cardsCount)
+
 	return (
 		<>
-			<Selector />
-			<CardArea cards={cards} />
+			{width && width <= 1040 ? (
+				<DropDownSelector categories={categories} />
+			) : (
+				<Selector categories={categories} />
+			)}
+			<CardArea cards={renderCards} />
+			<IncrementBtn />
 		</>
 	)
 }

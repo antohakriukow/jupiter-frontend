@@ -1,5 +1,7 @@
 .cardArea {
+	margin: 0;
 	padding: 0;
+	padding-top: 75px;
 	max-width: 1570px;
 	display: grid;
 	grid-template-columns: repeat(4, 1fr);
@@ -21,5 +23,11 @@
 @media (max-width: 1040px) {
 	.cardArea {
 		grid-template-columns: repeat(1, 1fr);
+	}
+}
+
+@media (max-width: 400px) {
+	.cardArea {
+		padding-top: 48px;
 	}
 }

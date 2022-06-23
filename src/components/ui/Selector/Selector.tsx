@@ -1,14 +1,27 @@
 import { FC } from 'react'
-import { categories } from '../../../data/categories'
+import { useActions } from '../../../hooks/useActions'
 import SelectorItem from '../SelectorItem/SelectorItem'
 import styles from './Selector.module.scss'
 
-const Selector: FC = () => {
+export interface ISelector {
+	categories: string[]
+}
+
+const Selector: FC<ISelector> = ({ categories }) => {
+	const { setCurrentCategory } = useActions()
+
 	return (
 		<ul className={styles.selector}>
-			<SelectorItem category="Show All" key="Show All" />
+			<li onClick={() => setCurrentCategory('Show All')}>
+				<SelectorItem category="Show All" key="Show All" />
+			</li>
 			{categories.map((category) => (
-				<SelectorItem category={category} key={category} />
+				<li
+					className={styles.active}
+					onClick={() => setCurrentCategory(category)}
+				>
+					<SelectorItem category={category} key={category} />
+				</li>
 			))}
 		</ul>
 	)

@@ -1,0 +1,21 @@
+.btnArea {
+	margin-top: 80px;
+	margin-bottom: 120px;
+}
+.btn {
+	color: #391400;
+	width: 170px;
+	height: 48px;
+	background: #fff;
+	border-radius: 6px;
+	border: none;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 1;
+
+	&:hover {
+		cursor: pointer;
+		color: #16cd53;
+		outline: 1px #16cd53 solid;
+	}
+}

@@ -14,6 +14,6 @@ Test task for web-developer vacancy
 
 https://github.com/antohakriukow/jupiter-frontend
 
-### Maket & Task
+### Design & Task
 
 https://disk.yandex.ru/d/cVlw2abdDbQHFA
